@@ -1,0 +1,37 @@
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-100 {
+    flex: 100%;
+}
+.col-75 {
+    flex: 75%;
+}
+.col-70 {
+    flex: 70%;
+}
+.col-60 {
+    flex: 60%;
+}
+.col-50 {
+    flex: 50%;
+}
+.col-40 {
+    flex: 40%;
+}
+.col-30 {
+    flex: 30%;
+}
+.col-25 {
+    flex: 25%;
+}
+.left {
+    justify-content: flex-start;
+}
+.right {
+    justify-content: flex-end;
+}
+.center {
+    justify-content: center;
+}
