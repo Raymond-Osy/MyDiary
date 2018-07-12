@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Clicker+Script');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+html {
+    margin: 0;
+    height: 100%;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+body {
+    margin: 0;
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/cover1.jpg") no-repeat center center;
+    background-color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: space-between;
+} 
+header {
+    list-style-type: none;
+    overflow: hidden;
+    margin-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    font-family: 'Nunito', sans-serif;
+}
+
+#logo {
+    font-family: 'Clicker Script', cursive;
+    font-size: 35px;
+    padding-left: 40px;
+    cursor: pointer;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+span {
+    color: #f4511e;
+    font-weight: bold;
+}
+ .btn-about {
+    border-radius: 50%;
+    border: none;
+    padding: 10px;
+    background-color: #f4511e;
+    color: white;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Clicker Script', cursive;
+    font-size: 20px;
+} 
+.about {
+    text-align: right;
+    padding-top: 25px;
+}
+
+.btn-about:hover {
+    opacity: 1
+}
+.btn {
+    background-color: #f4511e;
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+    margin: 15px;
+    font-family: 'Nunito', sans-serif;
+}
+.btn:hover {
+    background-color: #f46c1e;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+.text-center {
+    text-align: center;
+}
+
+/* used for debugging purposes */
+.bg-red {
+    background-color: red;
+}
+.bg-blue {
+    background-color: blue;
+}
+.bg-green {
+    background-color: green;
+}
+/* End */
+
+footer {
+    display: flex;
+    height: 70px;
+    color: #FFFFFF;
+    background: linear-gradient(rgba(0, 0, 0, 0.205), rgba(0, 0, 0, 0.9));
+    padding: 0 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    margin-top: 20px;
+}
