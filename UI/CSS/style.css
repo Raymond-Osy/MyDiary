@@ -164,6 +164,17 @@ input[type=email], input[type=password], input[type=text] {
     color: #f46c1e;
     text-decoration: none;
 }
+.wrap {
+    display: flex;
+}
+.abt-header {
+    text-align: center;
+    border-bottom-color: 1px solid #f4511e;
+}
+.abt-body {
+    text-align: center;
+    padding: 10px;
+}
 
 /* media queries */
 @media (max-width: 400px){
