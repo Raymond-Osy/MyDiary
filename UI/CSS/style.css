@@ -94,6 +94,12 @@ span {
 .text-center {
     text-align: center;
 }
+.mt-0{
+    margin-top: 0;
+}
+.pt-0 {
+    padding-top: 0;
+}
 
 /* used for debugging purposes */
 .bg-red {
