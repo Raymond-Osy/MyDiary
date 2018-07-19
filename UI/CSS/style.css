@@ -178,8 +178,74 @@ input[type=email], input[type=password], input[type=text] {
 
 /* media queries */
 @media (max-width: 720px){
+    /* For landing page */
+    #logo {
+        font-family: 'Clicker Script', cursive;
+        font-size: 30px;
+        padding-left: 20px;
+        cursor: pointer;
+    }
+    .btn-about {
+        padding: 7px;
+    }
+    .about {
+        padding-top: 20px;
+    }
+    .btn {
+        border-radius: 4px;
+        font-size: 15px;
+        padding: 5px;
+        margin: 10px;
+    }
     .wrap {
         display: flex;
         flex-wrap: wrap;
+    }
+    /* For signin and signup pages */
+    .form-container {
+        width: 80%;
+        margin: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .form-container h1 {
+        font-size: 1.6rem;
+    }
+    .form-container p {
+        font-size: small;
+    }
+}
+@media (max-width: 400px){
+    /* For landing page */
+    #logo {
+        font-family: 'Clicker Script', cursive;
+        font-size: 30px;
+        padding-left: 20px;
+        cursor: pointer;
+    }
+    .btn-about {
+        padding: 7px;
+    }
+    .about {
+        padding-top: 20px;
+    }
+    .btn {
+        border-radius: 4px;
+        font-size: 15px;
+        padding: 5px;
+        margin: 10px;
+    }
+    /* For signin and signup pages */
+    .form-container {
+        width: 80%;
+        margin: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .form-container h1 {
+        font-size: 1.6rem;
+    }
+    .form-container p {
+        font-size: small;
     }
 }
