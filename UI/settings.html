@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Raymond Akalonu">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <link rel="stylesheet" href="./CSS/admin.css">   
+    <link rel="stylesheet" href="./CSS/position.css"> 
+    <title>My Diary| Entries</title>
+    </head>
+
+    <!--
+        for small screen size
+        when on screen size of <= 600, theside bar should take up the whole screen.
+    -->
+
+    <body class="mainpage-styles">
+        <div class="navbar">
+            <div class="logo" style="flex-grow: 9">
+                <h1>
+                    <a href="index.html">MyDiary</a>
+                </h1>
+            </div>
+            <div class="dropdown" style="flex-grow: 1" style="float:right;">
+                <div class="dropbtn">Raymond <i class="fa fa-sort-down" style="font-size:25px"></i></div>
+                <div class="dropdown-content">
+                    <a href="about.html">Help & FAQs</a>
+                    <a href="index.html">Logout</a>
+                </div>
+            </div>
+        </div>
+        
+        <div id="mySidenav" class="sidenav">
+            <h2>Menu</h2>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="settings.html"><img src="img/cover6.jpg" alt="Profile"></a>
+            <a href="entries.html" class="entry1">Entries</a>
+            <a href="addnew.html"class="entry2">Add New</a>
+            <a href="settings.html" class="entry3 active">Settings</a>
+        </div>
+         
+        <div class="openbtn">
+            <span onclick="openNav()">&#9776;</span>
+        </div>
+
+        
+
+        <footer>
+            <p>Copyright &copy; 2018, Raymond Akalonu.</p>
+        </footer>
+
+        <script src="js/main.js"></script> 
+    </body>
+
+</html>
