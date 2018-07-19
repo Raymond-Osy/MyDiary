@@ -205,3 +205,169 @@ hr {
     background-color: #fdf9f9c7;
     padding: 10px;
 }
+
+/* For settings */
+.settings-container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0);
+    background: linear-gradient(rgba(255, 255, 255, 0.671), rgba(255, 255, 255, 0.596));
+    max-width: 900px;
+    margin: auto;
+    font-family: arial;
+}
+.settings-container h2 {
+    background: linear-gradient(rgba(243, 117, 59, 0.945), rgba(255, 255, 255, 0.596));
+    text-align: center;
+}
+.settings-container h3 {
+    padding-left: 10px;
+    color: #818181;
+}
+.settings-container p {
+    padding-left: 10px;
+}
+/* The switch - the box around the slider */
+.toogle {
+    display: flex;
+    flex-direction: row;
+}
+.switch {
+    text-align: center;
+    margin-left: 10px;
+    position: relative;
+    display: inline-block;
+    width: 90px;
+    height: 34px;
+}
+.switch input {
+      display:none;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ca2222;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: #2ab934;
+}
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(55px);
+    -ms-transform: translateX(55px);
+    transform: translateX(55px);
+}
+
+  /*------ ADDED YES or NO ---------*/
+.on {
+    display: none;
+}  
+.on, .off {
+    color: white;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    font-size: 10px;
+    font-family: Verdana, sans-serif;
+}
+input:checked+ .slider .on {
+    display: block;
+}
+  
+  input:checked + .slider .off {
+      display: none;
+}
+  
+  /*--------- END --------*/
+  
+  /* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+ /* Statistics table */
+#statistics {
+    font-family: 'Roboto', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#statistics td {
+    border: 1px solid #ec785a;
+    padding: 15px;
+}
+
+#statistics tr:nth-child(even){
+    background-color: #f4501e73;
+}
+.entry-btn1 {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+    margin: 15px;
+    font-family: 'Nunito', sans-serif;
+}
+.entry-btn1:hover {
+    background-color: #4caf4fe5;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+.entry-btn2 {
+    background-color: #d50000;
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+    margin: 15px;
+    font-family: 'Nunito', sans-serif;
+}
+.entry-btn2:hover {
+    background-color: #d50000d3;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* media queries */
+@media (max-width: 400px){
+    /* for sidebar */
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+    .wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
