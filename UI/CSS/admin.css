@@ -170,3 +170,38 @@ button {
     padding: 13px;
     resize: vertical;
 }
+hr {
+    color: #f4511e;
+    width: 55%;
+    box-sizing: content-box;
+    height: 0;
+    width: 99.9%;
+    overflow: hidden;
+    border-style: solid;
+    border-width: 0.5px;
+}
+ /* To be debugged */
+.entry1:hover {
+    background-color: #110603fd;
+}
+.entry2:hover {
+    background-color: #110603fd;
+}
+.entry3:hover {
+    background-color: #110603fd;
+}
+/* end */
+.entry-column {  
+    display: flex;
+    flex-direction: column;
+}
+.entry-column a{
+    color: black;
+    text-decoration: none
+} .entry-column a:hover{color: grey}
+
+.entry-item {
+    margin: 10px;
+    background-color: #fdf9f9c7;
+    padding: 10px;
+}
