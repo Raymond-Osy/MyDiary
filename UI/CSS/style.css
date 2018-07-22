@@ -82,6 +82,8 @@ span {
     padding: 5px;
     margin: 15px;
     font-family: 'Nunito', sans-serif;
+    text-align: center;
+    text-decoration: none;
 }
 .btn:hover {
     background-color: #f46c1e;
