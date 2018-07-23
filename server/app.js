@@ -1,7 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import logger from 'morgan';
-// import router from './routes/routes';
+import router from './routes/routes';
 
 const app = express();
 const http = require('http');
@@ -12,7 +12,7 @@ app.use(logger('dev'));
 app.use(bodyParser.urlencoded({
   extended: true,
 }));
-// app.use('/', router);
+app.use('/api/v1', router);
 
 
 // returns 404 for unknown routes
