@@ -17,7 +17,7 @@ app.use('/api/v1', router);
 
 // returns 404 for unknown routes
 app.all('*', (req, res) => {
-  res.status(404).send('jhgfjhklkgcvghliydfgghlgc');
+  res.status(404).send('Hello world!');
 });
 
 const port = parseInt(process.env.PORT, 10) || 8000;
