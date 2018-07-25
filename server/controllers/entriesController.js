@@ -26,6 +26,23 @@ class EntriesController {
     * @returns {object} - status Message and the particular entry by id.
     * @memberOf BusinessController
     */
+  static fetchEntryById(req, res) {
+    const id = req.params.entryId;
+    const entry = entries.find(entryItem => +entryItem.entryId === +id);
+    if (!entry) {
+      return res.status(404).json({ message: `Entry with entryId ${id} does not exist` });
+    }
+    return res.json({ message: 'Entries search was successful', entry });
+  }
+
+
+  /**
+    * @static
+    * @param {object} req - The request payload sent to the router
+    * @param {object} res - The response payload sent back from the controller
+    * @returns {object} - status Message and the particular entry by id.
+    * @memberOf BusinessController
+    */
 }
 
 export default EntriesController;
