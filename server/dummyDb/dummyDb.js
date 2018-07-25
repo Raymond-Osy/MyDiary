@@ -1,7 +1,7 @@
 const entries = [
   {
     entryId: 1,
-    entryBody: 'First Entry Body',
+    entryContent: 'First Entry Body',
     dateTime: 'today',
     userId: 3,
   },
@@ -12,7 +12,7 @@ const entries = [
     userId: 1,
   },
   {
-    entryId: 1,
+    entryId: 3,
     entryContent: 'Third Entry Body',
     dateTime: '3 days ago',
     userId: 2,
