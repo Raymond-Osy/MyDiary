@@ -35,6 +35,24 @@ class EntriesController {
     return res.json({ message: 'Entries search was successful', entry });
   }
 
+  /**
+   * @static
+   * @param {object} req - The request payload sent to the router
+   * @param {object} res - The response payload sent back from the controller
+   * @returns {object} - status Message and the particular entry created.
+   * @memberOf BusinessController
+   */
+  static createEntry(req, res) {
+    const entryId = entries.length === 0 ? 1
+      : entries.length + 1;
+    const dateTime = new Date();
+    const newEntry = req.body;
+    newEntry.entryId = entryId;
+    newEntry.dateTime = dateTime;
+    entries.push(newEntry);
+    return res.status(201).send({ message: 'New Entry successfully added', newEntry });
+  }
+
 
   /**
     * @static
