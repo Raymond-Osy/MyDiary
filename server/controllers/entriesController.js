@@ -53,14 +53,14 @@ class EntriesController {
     return res.status(201).send({ message: 'New Entry successfully added', newEntry });
   }
 
- /**
+  /**
     * @static
     * @param {object} req - The request payload sent to the router
     * @param {object} res - The response payload sent back from the controller
     * @returns {object} - status Message and the particular updated entry created.
     * @memberOf BusinessController
     */
-   static updateEntry(req, res) {
+  static updateEntry(req, res) {
     const id = req.params.entryId;
     const entry = entries.find(entryItem => +entryItem.entryId === +id);
     Object.assign(entry, req.body);
@@ -68,13 +68,5 @@ class EntriesController {
   }
 }
 
-  /**
-    * @static
-    * @param {object} req - The request payload sent to the router
-    * @param {object} res - The response payload sent back from the controller
-    * @returns {object} - status Message and the particular entry by id.
-    * @memberOf BusinessController
-    */
-}
 
 export default EntriesController;
