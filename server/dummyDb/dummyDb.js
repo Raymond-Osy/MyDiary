@@ -1,7 +1,7 @@
 const entries = [
   {
     entryId: 1,
-    entryBody: 'First Entry Body',
+    entryContent: 'First Entry Body',
     dateTime: 'today',
     userId: 3,
   },
