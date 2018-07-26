@@ -28,3 +28,15 @@ describe('Get all diary entries from database', () => {
       });
   });
 });
+
+describe('Get a specified entry from the database', () => {
+  it('Should get one specific entry by ID', (done) => {
+    chai.request(app)
+      .get('/api/v1/entries/1')
+      .end((err, res) => {
+        expect(res).to.have.status(200);
+        expect(res.body).to.be.an('object');
+        done();
+      });
+  });
+});
