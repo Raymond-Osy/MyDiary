@@ -1,0 +1,41 @@
+{
+  "name": "mydiary",
+  "version": "1.0.0",
+  "description": "MyDiary is an online journal where users can pen down their thoughts and feelings",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel server -d dist/server",
+    "start:dev": "nodemon --exec babel-node server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raymond-Osy/MyDiary.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Raymond-Osy/MyDiary/issues"
+  },
+  "homepage": "https://github.com/Raymond-Osy/MyDiary#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.2.0",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-react": "^7.9.1",
+    "eslint-plugin-standard": "^3.1.0",
+    "nodemon": "^1.18.3"
+  }
+}
