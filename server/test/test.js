@@ -56,3 +56,21 @@ describe('Create a New Entry', () => {
       });
   });
 });
+
+describe('Modify an Entry', () => {
+  const newEntry = {
+    entryContent: 'This is a new entry content',
+    dateTime: 'In the future',
+    userId: 100
+  };
+  it('Should modify the entry', (done) => {
+    chai.request(app)
+      .put('/api/v1/entries/1').send({
+        entryContent: 'Updated Entry Content',
+      })
+      .end((err, res) => {
+        expect(res).to.have.status(200);
+        done();
+      });
+  });
+});
