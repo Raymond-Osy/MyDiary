@@ -8,7 +8,7 @@ const should = chai.should();
 chai.use(chaiHttp);
 
 describe('Get a non existing url/page', () => {
-  it('Should return 404 for unknown routes', (done) => {
+  it('Should return a 404 for unknown routes', (done) => {
     chai.request(app)
       .get('/invalid/route')
       .end((err, res) => {
