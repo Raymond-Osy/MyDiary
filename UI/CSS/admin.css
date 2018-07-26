@@ -326,7 +326,7 @@ input:checked+ .slider .on {
     border-radius: 3px;
     font-size: 20px;
     color: white;
-    padding: 5px;
+    padding: 10px;
     margin: 15px;
     font-family: 'Nunito', sans-serif;
 }
@@ -344,7 +344,7 @@ input:checked+ .slider .on {
     border-radius: 3px;
     font-size: 20px;
     color: white;
-    padding: 5px;
+    padding: 10px;
     margin: 15px;
     font-family: 'Nunito', sans-serif;
 }
