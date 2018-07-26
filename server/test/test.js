@@ -40,3 +40,20 @@ describe('Get a specified entry from the database', () => {
       });
   });
 });
+
+describe('Create a New Entry', () => {
+  const newEntry = {
+    entryTitle: 'This is a new Entry Title',
+    entryContent: 'This is a new entry content',
+    dateTime: 'In the future',
+    userId: 100
+  };
+  it('Should add a new entry to the database', (done) => {
+    chai.request(app)
+      .post('/api/v1/entries').send(newEntry)
+      .end((err, res) => {
+        expect(res).to.have.status(201);
+        done();
+      });
+  });
+});
