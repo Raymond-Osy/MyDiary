@@ -43,7 +43,6 @@ describe('Get a specified entry from the database', () => {
 
 describe('Create a New Entry', () => {
   const newEntry = {
-    entryTitle: 'This is a new Entry Title',
     entryContent: 'This is a new entry content',
     dateTime: 'In the future',
     userId: 100
