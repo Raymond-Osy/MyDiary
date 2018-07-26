@@ -17,3 +17,14 @@ describe('Get a non existing url/page', () => {
       });
   });
 });
+
+describe('Get all diary entries from database', () => {
+  it('Should get all entries from database', (done) => {
+    chai.request(app)
+      .get('/api/v1/entries')
+      .end((err, res) => {
+        expect(res).to.have.status(200);
+        done();
+      });
+  });
+});
