@@ -119,6 +119,8 @@
 .dropdown:hover .dropdown-content {display: block;}
 
 .navbar {
+    position: fixed;
+    width: 100%;
     display: flex;
     flex-direction: row;
     text-decoration: none;
