@@ -79,13 +79,36 @@ span {
     border-radius: 3px;
     font-size: 20px;
     color: white;
-    padding: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn-main {
+    background-color: #f4511e;
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
+    color: white;
+    padding: 8px;
     margin: 15px;
     font-family: 'Nunito', sans-serif;
     text-align: center;
     text-decoration: none;
 }
 .btn:hover {
+    background-color: #f46c1e;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn-main:hover {
     background-color: #f46c1e;
     opacity: 0.6;
     transition: 0.3s;
@@ -196,8 +219,12 @@ input[type=email], input[type=password], input[type=text] {
     .btn {
         border-radius: 4px;
         font-size: 15px;
-        padding: 5px;
         margin: 10px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .wrap {
         display: flex;
@@ -234,8 +261,12 @@ input[type=email], input[type=password], input[type=text] {
     .btn {
         border-radius: 4px;
         font-size: 15px;
-        padding: 5px;
         margin: 10px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
     /* For signin and signup pages */
     .form-container {
