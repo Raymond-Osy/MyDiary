@@ -1,3 +1,5 @@
+// Tutorial guide from youtube and https://scotch.io/tutorials/getting-started-with-node-express-and-postgres-using-sequelize#toc-before-we-begin
+
 import express from 'express';
 import bodyParser from 'body-parser';
 import logger from 'morgan';
