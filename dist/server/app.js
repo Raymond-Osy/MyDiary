@@ -22,6 +22,8 @@ var _routes2 = _interopRequireDefault(_routes);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// Tutorial guide from youtube and https://scotch.io/tutorials/getting-started-with-node-express-and-postgres-using-sequelize#toc-before-we-begin
+
 var app = (0, _express2.default)();
 var http = require('http');
 

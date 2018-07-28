@@ -48,6 +48,57 @@ var EntriesController = function () {
       * @memberOf BusinessController
       */
 
+  }, {
+    key: 'fetchEntryById',
+    value: function fetchEntryById(req, res) {
+      var id = req.params.entryId;
+      var entry = _dummyDb2.default.find(function (entryItem) {
+        return +entryItem.entryId === +id;
+      });
+      if (!entry) {
+        return res.status(404).json({ message: 'Entry with entryId ' + id + ' does not exist' });
+      }
+      return res.json({ message: 'Entries search was successful', entry: entry });
+    }
+
+    /**
+     * @static
+     * @param {object} req - The request payload sent to the router
+     * @param {object} res - The response payload sent back from the controller
+     * @returns {object} - status Message and the particular entry created.
+     * @memberOf BusinessController
+     */
+
+  }, {
+    key: 'createEntry',
+    value: function createEntry(req, res) {
+      var entryId = _dummyDb2.default.length === 0 ? 1 : _dummyDb2.default.length + 1;
+      var dateTime = new Date();
+      var newEntry = req.body;
+      newEntry.entryId = entryId;
+      newEntry.dateTime = dateTime;
+      _dummyDb2.default.push(newEntry);
+      return res.status(201).send({ message: 'New Entry successfully added', newEntry: newEntry });
+    }
+
+    /**
+      * @static
+      * @param {object} req - The request payload sent to the router
+      * @param {object} res - The response payload sent back from the controller
+      * @returns {object} - status Message and the particular updated entry created.
+      * @memberOf BusinessController
+      */
+
+  }, {
+    key: 'updateEntry',
+    value: function updateEntry(req, res) {
+      var id = req.params.entryId;
+      var entry = _dummyDb2.default.find(function (entryItem) {
+        return +entryItem.entryId === +id;
+      });
+      Object.assign(entry, req.body);
+      return res.json({ message: 'entry updated successfully', entry: entry });
+    }
   }]);
 
   return EntriesController;
